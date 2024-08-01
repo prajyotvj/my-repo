@@ -1,0 +1,67 @@
+# BusEasy Website
+
+## Project Description
+
+The BusEasy Booking is developed using React.js for the frontend and 
+Json server as a backend to manage data. The system allows users to search for the buses,view bus schedules, and can select no of seats. It has role based access (agent and customer roles)  to differentiate functionalities and access level.
+
+* Login: Authenticates user based on the email and password.
+* Home Page: Contains the hero section with highlighting website feature section.
+* BookNow: Has search field for bus search based on source,destination and date.
+* SeatSelection: user will able to enter the no. of seat.
+* PassengerDetails: displays the forms to take passengers details.
+* BookingStatus: user can see his previous bookings.
+* BusList: Agent can see all buses in table.
+* AddBus and EditBus: to add new and edit bus record.
+* Header: for navbar content having logo and quick links.
+* Footer: has website copywrite information with some quick links.
+* Protected: to ensure that user can't access website without login.
+
+## Technologies Used
+### Frontend:
+* HTML, CSS for structure and styling
+* Bootstrap for responsive design
+* React.js for dynamic interfaces
+
+### Backend:
+* JSON Server for managing bus data
+## Running The Project
+
+#### To run the BusEasy website, follow these steps:
+
+##### 1) Clone the repository:
+
+     git clone -b prajyot.jadhav  https://github.com/aress-kiran/ServiceNow.git
+
+----
+    cd <project-directory>
+
+##### 2) Navigate to the project directory and install dependencies:
+
+    npm install
+
+##### 3) Start the JSON Server:
+
+* Navigate to the src folder:
+
+        cd src
+##### 4) Run the JSON Server:
+    json-server --watch db.json --port 8000
+
+##### 5) Run the Frontend:
+    npm start
+
+##### The React app will run in development mode. Open http://localhost:3000 in your browser to view it.
+
+
+## Login Details
+
+#### Use the following credentials to log in:
+
+    1) for role: customer
+        Email : user1@gmail.com
+        Password: user123
+    
+    2) for role: agent
+        Email : agent@gmail.com
+        Password: agent123
